@@ -27,10 +27,10 @@ class LogPerfHelper extends BlackBox with HasBlackBoxInline {
       |  output        dump
       |);
       |
-      |assign timer         = `SIM_TOP_MODULE_NAME.timer;
-      |assign logEnable     = `SIM_TOP_MODULE_NAME.logEnable;
-      |assign clean         = `SIM_TOP_MODULE_NAME.clean;
-      |assign dump          = `SIM_TOP_MODULE_NAME.dump;
+      |assign timer         = 64'b0; // `SIM_TOP_MODULE_NAME.timer;
+      |assign logEnable     = 1'b0; // `SIM_TOP_MODULE_NAME.logEnable;
+      |assign clean         = 1'b0; // `SIM_TOP_MODULE_NAME.clean;
+      |assign dump          = 1'b0; // `SIM_TOP_MODULE_NAME.dump;
       |
       |endmodule
       |
